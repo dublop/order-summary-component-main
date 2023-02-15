@@ -1,0 +1,123 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Bright-blue-hover: hsl(245, 66%, 58%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: #1f2f56;
+    --sm: 1.6rem;
+    --md: 1.9rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: var(--md);
+    font-weight: 500;
+    background-color: var(--Pale-blue);
+    display: grid;
+    place-items: center;
+}
+
+button {
+    width: 100%;
+    font-size: var(--sm);
+    font-weight: 900;
+    font-family: 'Red Hat Display', sans-serif;
+    border: none;
+    background-color: transparent;
+}
+
+main {
+    width: 80%;
+    min-width: 375px;
+    max-width: 375px;
+    background-color: var(--Very-pale-blue);
+    color: var(--Desaturated-blue);
+    border-radius: 2rem;
+}
+
+.image {
+    width: 100%;
+    height: 20rem;
+    background-image: url('./images/illustration-hero.svg');
+    border-radius: 2rem 2rem 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    text-align: center;
+}
+
+.content h1 {
+    margin-bottom: 2rem;
+    color: var(--Dark-blue);
+}
+
+.content p {
+    margin-bottom: 4rem;
+    line-height: 3rem;
+    font-size: var(--md);
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.plans a {
+    font-size: var(--sm);
+    color: var(--Bright-blue);
+    font-weight: 600;
+}
+
+.plans a:hover{
+    color:  var(--Bright-blue-hover);
+}
+
+.plans div span {
+    margin-bottom: 1rem;
+    color: var(--Dark-blue);
+    font-weight: 600;
+}
+
+.content .pay {
+    padding: 2rem 0;
+    margin-bottom: 4rem;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    border-radius: 1rem;
+    -webkit-box-shadow: 4px 17px 50px -4px rgba(31,47,86,0.44); 
+    box-shadow: 4px 17px 50px -4px rgba(31,47,86,0.44);
+} 
+
+.content .pay:hover {
+    background-color: var(--Bright-blue-hover);
+}
+
+.content .cancel {
+    color: var(--Desaturated-blue);
+}
+
+.cancel:hover {
+    color: var(--Dark-blue);
+}
